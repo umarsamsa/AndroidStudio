@@ -1,22 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#F4EEF2"
-    tools:context=".SecondActivity">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+    <EditText
+        android:id="@+id/to"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#25578C"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.454"
-        app:srcCompat="@drawable/secondactivity" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:hint="@string/to" />
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/message"
+        android:hint="@string/subject"/>
+    <EditText
+        android:id="@id/message"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/to"
+        android:layout_alignParentRight="true"
+        android:hint="@string/message"/>
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/message"
+        android:layout_alignParentRight="true"
+        android:text="@string/Button1" />
+</RelativeLayout>
