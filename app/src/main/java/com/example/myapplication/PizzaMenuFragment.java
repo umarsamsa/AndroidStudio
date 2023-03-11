@@ -28,7 +28,6 @@ import android.widget.ListView;
 
         @Override
         public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup parent, @Nullable Bundle savedInstanceState) {
-            // Inflate the xml file for the fragment
             return inflater.inflate(R.layout.fragment_pizza_menu, parent, false);
         }
 
@@ -41,8 +40,7 @@ import android.widget.ListView;
             lvItems.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
                 public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    // go to activity to load pizza details fragment
-                    listener.onPizzaItemSelected(position); // (3) Communicate with Activity using Listener
+                    listener.onPizzaItemSelected(position);
                 }
             });
         }
