@@ -14,7 +14,7 @@
         app:showAsAction="ifRoom"
         android:icon="@drawable/refresh_icon" />
 
-    <item android:title="copy"
+    <item android:title="Copy"
         android:id="@+id/copy"
         android:orderInCategory="100"
         app:showAsAction="never"

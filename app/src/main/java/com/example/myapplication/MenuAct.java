@@ -45,6 +45,7 @@ public class MenuAct extends AppCompatActivity {
                 DialogFragment dialogFragment = new DialogFragment();
                 dialogFragment.show(getSupportFragmentManager(), "My Fragment");
                 break;
+
             case R.id.copy:
                 Toast.makeText(this, "Copy Clicked", Toast.LENGTH_SHORT).show();
         }
@@ -61,7 +62,6 @@ public class MenuAct extends AppCompatActivity {
 
             }
         });
-
         AlertDialog dialog = builder.create();
         dialog.show();
     }
