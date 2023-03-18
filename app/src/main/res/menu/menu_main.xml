@@ -20,5 +20,4 @@
         app:showAsAction="never"
         android:icon="@drawable/copy_icon" />
 
-
 </menu>
