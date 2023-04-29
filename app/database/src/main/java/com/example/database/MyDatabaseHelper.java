@@ -9,7 +9,6 @@ import android.util.Log;
 
 public class MyDatabaseHelper extends SQLiteOpenHelper {
 
-    // Define constants for the database name and version
     private static final String DATABASE_NAME = "my_database";
     private static final int DATABASE_VERSION = 1;
 
